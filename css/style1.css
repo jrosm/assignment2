@@ -16,7 +16,32 @@ h1 {
 }
 
 .img-size {
-    width: 300px;
+    width: 400px;
 }
 
 /* IDs: */
+#bgblack {
+    background-color: black;
+}
+
+/* Animation: */
+.colorshift {
+    animation: color-change 4s infinite;
+  }
+  @keyframes color-change {
+    0% {
+      color: #feaa39;
+    }
+    25% {
+      color: #2ea4a7;
+    }
+    50% {
+      color: #ca265a;
+    }
+    75% {
+      color: #2ea4a7;
+    }
+    100% {
+      color: #feaa39;
+    }
+  }
