@@ -1,0 +1,22 @@
+/* Google Fonts: */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+/* Unique */
+h1 {
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}
+
+/* Classes: */
+.container {
+    background-color: grey;
+}
+.accordion-header {
+    font-family: 'Roboto Slab', serif;
+}
+
+.img-size {
+    width: 300px;
+}
+
+/* IDs: */
