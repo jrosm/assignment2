@@ -46,12 +46,33 @@ colorChanger.addEventListener('click', () => {
 function colors() {
     let colorArray = [];
     for(let i = 0; i < 3; i++){
-        colorArray.push(Math.floor(Math.random() * (255 - 0) + 0))
+        colorArray.push(Math.floor(Math.random() * (255 - 0) + 0));
     }
 
     let color = colorArray
     .map(x => x.toString(16))
     .join('');
 
-    return #${color};
+    return `#${color}`;
 }
+
+// Replace the HTML content on a paragraph.
+$("#add").html("<p>I replaced the previous text!</p>");
+
+// Create a button and add an event that adds some content at the beginning of a paragraph.
+const textButton = document.querySelector(".textButton");
+textButton.addEventListener('click', function() {
+    $("#add2").prepend("I am sentence 0. ");
+});
+
+// Leaflet 
+var map = L.map('map').setView([51.505, -0.09], 13);
+
+L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox/streets-v11',
+    tileSize: 512,
+    zoomOffset: -1,
+    accessToken: 'your.mapbox.access.token'
+}).addTo(map);

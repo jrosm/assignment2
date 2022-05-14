@@ -46,3 +46,6 @@ h1 {
       color: #feaa39;
     }
   }
+
+  /* Leaflet */
+  #map { height: 180px; }
